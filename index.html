@@ -3,7 +3,7 @@ body {
     font-family: arial, sans-serif;
 }
 
-ul {
+.align-right {
     text-align: right;
     margin: 0;
     padding: 0;
@@ -12,6 +12,17 @@ ul {
 #Navbar {
     display: inline;
     font-size: 12;
+}
+
+#Google-Logo {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#search-bar {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 150%;
 }
 
 .center {
@@ -27,6 +38,25 @@ ul {
     text-align: center;
     font-size: 10;
 }
+
+#footer-bar {
+    font-size: 12;
+    background-color: rgb(228, 228, 228);
+}
+
+#footer-bar-left {
+    display: inline;
+    text-align: left;
+}
+
+#footer-bar-right {
+    display: inline;
+    text-align: right;
+}
+
+#float-right {
+
+}
 </style>
 
 <!DOCTYPE html>
@@ -37,7 +67,7 @@ ul {
 
     <body>
     <div>
-        <ul>
+        <ul class="align-right">
             <li id="Navbar"><a href="#">Gmail</a></li>
             <li id="Navbar"><a href="#">Images</a></li>
             <li id="Navbar"><a href="#">Apps</a></li>
@@ -46,26 +76,45 @@ ul {
     </div>
 
     <div>
-    <img class="center" id="Google-Logo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <form id="search-bar">
-            <input class="center" type="search" placeholder="Search Here"></input>
-            <div id="container">
-                <button id="search-buttons">Google Search</button> <button id="search-buttons">I'm Feeling Lucky</button>
-            </div>
-            </form>
+        <div>
+            <img class="center" id="Google-Logo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        
+        <div>
+            <input id="search-bar" class="center" type="search" placeholder="Search Here"></input>
+        </div>
+
+        <div id="container">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+
     <p id="language-select">Google offered in: <a href="">Māori</a></p>
     </div>
 
+    <footer>
+        <div id="footer-bar">
+            <ul class="align-left">
+                <li id="footer-bar-left"><a href="">Advertising</a></li>
+                <li id="footer-bar-left"><a href="">Business</a></li>
+                <li id="footer-bar-left"><a href="">How Search Works</a></li>
+                <li style="float:right"><a href="">Settings</a></li>
+                <li style="float:right"><a href="">Terms</a></li>
+                <li style="float:right"><a href="">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+
     </body>
-    <footer></footer>
 
 <!--Issues:
     * <a href="""></a> hyperlinks in Navbars not working
         * I closed the </a> tag before the text... lol
     * In CSS, cannot select #id of HTML <header id="Navbar"> or <ul id="Navbar"
-        If I edit ul or li in CSS, then won't it affect all ul/li in the html?
+        * If I edit ul or li in CSS, then won't it affect all ul/li in the html?
         * Each li needs the #id individually (?)
     * Search buttons won't align horizontally
         * Put both buttons inside a single div and use $text-align:center on the div; 
+    - Can change search bar width, but not the height
 -->
 </html>
