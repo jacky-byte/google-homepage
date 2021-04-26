@@ -1,13 +1,51 @@
+<style>
+#Google-Logo {
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Navbar {
+    display: inline;
+}
+</style>
+
 <!DOCTYPE html>
 <html>
-    <head><title>Google</title></head>
-    <header></header>
+    <head>
+        <title>Google</title>
+    </head>
+
     <body>
-        <img alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <div>
+        <ul>
+            <li id="Navbar"><a href="#">Gmail</a></li>
+            <li id="Navbar"><a href="#">Images</a></li>
+            <li id="Navbar"><a href="#">Apps</a></li>
+            <li id="Navbar"><a href="#">Account</a></li>
+        </ul>
+    </div>
+
+    <div>
+    <img id="Google-Logo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         <form id="search-bar">
             <input type="search" placeholder="Search Here"></input>
-            <button>Google Search</button>
+            <button>Google Search</button> <button>I'm Feeling Lucky</button>
         </form>
+    <p>Google offered in: <a href="">Māori</a></p>
+    </div>
+
     </body>
     <footer></footer>
+
+    <!--Issues:
+        - <a href="""></a> hyperlinks in Navbars not working
+            * I closed the </a> tag before the text... lol
+        - In CSS, cannot select #id of HTML <header id="Navbar"> or <ul id="Navbar"
+            If I edit ul or li in CSS, then won't it affect all ul/li in the html?
+    -->
 </html>
