@@ -1,16 +1,21 @@
 <style>
-#Google-Logo {
-    align-items: center;
+.center {
+    display: block;
+    margin: 0 auto;
 }
 
 ul {
-    list-style-type: none;
+    text-align: right;
     margin: 0;
     padding: 0;
 }
 
 #Navbar {
     display: inline;
+}
+
+#search-buttons {
+    display: ;
 }
 </style>
 
@@ -31,10 +36,10 @@ ul {
     </div>
 
     <div>
-    <img id="Google-Logo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <img class="center" id="Google-Logo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         <form id="search-bar">
-            <input type="search" placeholder="Search Here"></input>
-            <button>Google Search</button> <button>I'm Feeling Lucky</button>
+            <input class="center" type="search" placeholder="Search Here"></input>
+            <button id="search-buttons" class="center">Google Search</button> <button id="search-buttons" class="center">I'm Feeling Lucky</button>
         </form>
     <p>Google offered in: <a href="">Māori</a></p>
     </div>
@@ -43,9 +48,11 @@ ul {
     <footer></footer>
 
     <!--Issues:
-        - <a href="""></a> hyperlinks in Navbars not working
+        * <a href="""></a> hyperlinks in Navbars not working
             * I closed the </a> tag before the text... lol
-        - In CSS, cannot select #id of HTML <header id="Navbar"> or <ul id="Navbar"
+        * In CSS, cannot select #id of HTML <header id="Navbar"> or <ul id="Navbar"
             If I edit ul or li in CSS, then won't it affect all ul/li in the html?
+            * Each li needs the #id individually (?)
+        - Search buttons won't align horizontally
     -->
 </html>
