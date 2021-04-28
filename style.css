@@ -1,7 +1,7 @@
 body {
     font-family: arial, sans-serif;
     font-size: small;
-    margin: 0; /* Will this help centering? */
+    margin: 0;
 }
 
 nav {
@@ -13,10 +13,7 @@ nav {
 nav div {
     width: 100%;
     display: flex;
-}
-
-.nav-left {
-    justify-content: start;
+    padding: 0 30px 0 30px;
 }
 
 .nav-right {
@@ -27,5 +24,91 @@ nav div a {
     padding: 5px; /* Pads around each header/footer link */
     text-decoration: none; /* Removes underline from hyperlinks */
     color: #3b3b3b;
-    white-space: nowrap;
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline for <a> hyperlinks on hover */
+}
+
+main {
+    display: flex;
+    position: relative;
+    align-items: center; /* Used in conjunction with display:flex */
+    justify-content: center; /* Used in conjunction with display:flex */
+    padding-top: 200px;
+}
+
+main img{
+    display: block; /* ??????? */
+    margin: 0 auto; /* ??????? */
+    padding-bottom: 5px;
+}
+
+#search-bar {
+    width: 46.5vw; /* 46.5% of viewport aka browser size */
+    height: 47px; /* Requires border (below) to set height for <input type="search"> */
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    font-size: small;
+    margin: 20px;
+}
+
+#search-bar:hover, #search-bar:active, #search-bar:focus {
+    box-shadow: 0px 1.7px 5px #dfdfdf;
+}
+
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5em 0 1em 0;
+}
+
+.search-buttons div {
+    margin: 5px; /* Seperate both buttons */
+    color: #3b3b3b;
+    background-color: rgba(245, 245, 245, 0.8);
+        padding: 10px 15px 10px 15px;
+    cursor: pointer; /* Changes cursor to hand pointer on hover */
+    border: 1px solid #fff; /* Invisible border to stop hover border moving things out of alignment */
+    border-radius: 5px;
+}
+
+.search-buttons div:hover {
+    border: 1px solid #c0c0c0;
+}
+
+.search-buttons a:hover {
+    text-decoration: none;
+}
+
+#language-select {
+    text-align: center;
+    padding: 0px;
+}
+
+#language-select a {
+    text-decoration: none;
+    margin-left: 0.25em;
+}
+
+footer {
+    background-color: #eee;
+    position: fixed;
+        width: 100%;
+        bottom: 0;
+}
+
+#footer-1 {
+    color: rgb(113,113,113);
+    padding: 0px 30px 0px 30px;
+    
+}
+
+#footer-2 {
+    border-top: 1px solid #d3d3d3;
+}
+
+#footer-2 a {
+    color: rgb(113,113,113);
 }
