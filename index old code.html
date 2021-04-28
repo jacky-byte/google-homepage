@@ -7,33 +7,31 @@
     </head>
 
     <body>
-        <header>
-            <nav> <!--Navigation Bar-->
-                <div>
-                    <a href="#">Gmail</a>
-                    <a href="#">Images</a>
-                    <a href="#">Apps</a>
-                    <a href="#">Account</a>
-                </div>
-            </nav>
-    </header>
+    <div>
+        <ul class="align-right">
+            <li id="Navbar"><a href="#">Gmail</a></li>
+            <li id="Navbar"><a href="#">Images</a></li>
+            <li id="Navbar"><a href="#">Apps</a></li>
+            <li id="Navbar"><a href="#">Account</a></li>
+        </ul>
+    </div>
 
-    <main> <!--Logo, Search Bar & Buttons, Language-->
+    <div>
         <div>
-            <img alt="Google Logo" height="92px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-        
-        <form>
-            <input type="search" name="search-bar" id="search-bar">
-
-            <div class="search-buttons">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
-        </form>
-
-            <p id="language-select">Google offered in: <a href="">Māori</a></p>
+            <img class="center" id="Google-Logo" alt="Google Logo" height="92px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
         </div>
-    </main>
+        
+        <div>
+            <input id="search-bar" class="center" type="search" placeholder="Search Here"></input>
+        </div>
+
+        <div id="container">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+
+    <p id="language-select">Google offered in: <a href="">Māori</a></p>
+    </div>
 
     <footer id="footer">
         <div id="footer-bar">
