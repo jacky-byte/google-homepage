@@ -1,58 +1,31 @@
 body {
     font-family: arial, sans-serif;
+    font-size: small;
+    margin: 0; /* Will this help centering? */
 }
 
-.align-right {
-    text-align: right;
-    margin: 0;
-    padding: 0;
+nav {
+    height: 50px;
+    display: flex; /* Nav (header, footer) items inline */
+    align-items: center; /* Align is vertical */
 }
 
-#Navbar {
-    display: inline;
-    font-size: 12;
+nav div {
+    width: 100%;
+    display: flex;
 }
 
-#Google-Logo {
-    margin-top: 50px;
-    margin-bottom: 10px;
+.nav-left {
+    justify-content: start;
 }
 
-#search-bar {
-    margin-bottom: 10px;
-    width: 500px;
-    height: 150%;
+.nav-right {
+    justify-content: flex-end;
 }
 
-.center {
-    display: block;
-    margin: 0 auto;
-}
-
-#container {
-    text-align: center;
-}
-
-#language-select {
-    text-align: center;
-    font-size: 10pt;
-}
-
-#footer-bar {
-    font-size: 12pt;
-    background-color: rgb(228, 228, 228);
-}
-
-#footer-bar-left {
-    display: inline;
-    text-align: left;
-}
-
-#footer-bar-right {
-    display: inline;
-    text-align: right;
-}
-
-#footer {
-
+nav div a {
+    padding: 5px; /* Pads around each header/footer link */
+    text-decoration: none; /* Removes underline from hyperlinks */
+    color: #3b3b3b;
+    white-space: nowrap;
 }
